@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="com.test.helpers.Listener"></listener>
+</listeners>
+	<test thread-count="5" name="Test">
+
+		<classes>
+			<class name="com.test.tests.TekArchApiTestScriptE2E">
+			<methods>
+			<include name="testcase1No_Of_DataRecords"></include>
+			<include name="testcase2createEmployee"></include>
+			<include name="testcase3deleteEmployee"></include>
+			<include name="testcase4deleteEmployeeId0"></include>
+			<include name="testcase5getDataofEmployeeId"></include>
+			</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
